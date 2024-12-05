@@ -1,0 +1,104 @@
+body{
+    margin: 0;
+    height: 100vh; /* Set the height to 100% of the viewport height */
+    display: flex;
+    flex-direction: column;
+    justify-content:start; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    background-color: rgb(228, 164, 239);
+}
+h1{
+    color: rgb(7, 0, 6);
+    font-size:xx-large;
+    font-family:Georgia, 'Times New Roman', Times, serif
+}
+h1:hover{
+    color: rgb(8, 0, 8);
+    transform: scale(1.5);
+}
+#input{
+    width: 400px; /* Set the width to a larger size */
+    height: 35px; /* Set the height to make it larger */
+    border-radius: 15px; /* Add border radius for rounded corners */
+    padding: 10px; /* Add some padding for better spacing */
+    font-size: large; /* Increase the font size */
+    border: 2px solid rgb(3, 3, 63); /* Optional: Add a border */
+    outline: none; /* Remove the default outline */
+    background-color: rgb(37, 35, 35);
+    color: white;
+}
+#btn{
+    width: 200px; /* Set the width to match the input fields */
+    height: 50px; /* Set the height to make it larger */
+    border-radius: 15px; /* Add border radius for rounded corners */
+    padding: 10px; /* Add some padding for better spacing */
+    font-size: large; /* Increase the font size */
+    border: 2px solid rgb(3, 3, 63); /* Optional: Add a border */
+    outline: none; /* Remove the default outline */
+    background-color: rgb(3, 3, 63); /* Set background color */
+    color: white; /* Set text color */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    transition: background-color 0.3s; /* Add transition for hover effect */
+    font-size: large;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+#btn:hover {
+    background-color: gray; /* Change background color on hover */
+    color: rgb(16, 4, 86); /* Change text color on hover */
+}
+
+li {
+    display: flex; /* Use flexbox for alignment */
+    align-items: center; /* Center items vertically */
+    margin: 10px 0; /* Add some margin between list items */
+    padding: 10px; /* Add padding for better spacing */
+    border-radius: 15px; /* Add border radius for rounded corners */
+    background-color: rgba(255, 255, 255, 0.1); /* Light background for the list item */
+}
+
+li .text {
+    flex-grow: 1; /* Allow the text to take up available space */
+    margin-left: 10px; /* Add space between checkbox and text */
+    margin-right: 10px; /* Add space between text and delete button */
+    color: rgb(11, 0, 0); /* Set text color */
+    font-size: 2em; /* Increase font size (you can adjust this value as needed) */
+    /* You can also use other units like px, rem, etc. */
+}
+
+.delete {
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Add border radius for rounded corners */
+    background-color: rgb(116, 68, 148); /* Set background color */
+    color: white; /* Set text color */
+    padding: 3px 6px; /* Reduce padding for a smaller button */
+    font-size: small; /* Set a smaller font size */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    transition: background-color 0.3s, transform 0.3s; /* Add transition for hover effect */
+}
+
+.delete:hover {
+    background-color: rgb(191, 55, 55); /* Change background color on hover */
+    transform: scale(1.1); /* Slightly increase size on hover */
+}
+
+/* Checkbox Background Color */
+input[type="checkbox"] {
+    transform: scale(1); /* Initial size */
+    transition: transform 0.3s; /* Add transition for scaling effect */
+    appearance: none; /* Remove default checkbox styling */
+    width: 20px; /* Set width */
+    height: 20px; /* Set height */
+    border: 2px solid rgb(3, 3, 63); /* Border color */
+    border-radius: 4px; /* Rounded corners */
+    background-color: rgb(100, 100, 255); /* Set background color (blue) */
+    cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+input[type="checkbox"]:checked {
+    background-color: rgb(38, 146, 18); /* Change background when checked (green) */
+}
+
+input[type="checkbox"]:hover {
+    transform: scale(1.2); /* Scale up on hover */
+}
